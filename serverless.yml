@@ -7,3 +7,7 @@ provider:
 functions:
   helloworld:
     handler: handler.run
+    events:
+      - http:
+          path: /
+          method: get
