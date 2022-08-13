@@ -5,8 +5,5 @@ provider:
   runtime: nodejs14.x
 
 functions:
-  rateHandler:
+  botHandler:
     handler: handler.run
-    events:
-      # Invoke Lambda function every minute
-      - schedule: rate(1 minute)
