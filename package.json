@@ -7,8 +7,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "node local-test.js",
-    "play": "serverless invoke --function rateHandler",
-    "deploy:func": "serverless deploy function --function rateHandler",
+    "play": "serverless invoke --function botHandler",
+    "deploy:func": "serverless deploy function --function botHandler",
     "deploy": "serverless deploy"
   },
   "dependencies": {
