@@ -5,9 +5,8 @@ provider:
   runtime: nodejs14.x
 
 functions:
-  helloworld:
+  rateHandler:
     handler: handler.run
     events:
-      - http:
-          path: /
-          method: get
+      # Invoke Lambda function every minute
+      - schedule: rate(1 minute)

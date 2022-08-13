@@ -6,8 +6,15 @@
   "author": "fancn21th <fancn21th@aliyun.com> (http://fancn21th.cn/)",
   "license": "MIT",
   "scripts": {
-    "play": "serverless invoke --function helloworld",
-    "deploy:func": "serverless deploy function --function helloworld",
+    "dev": "node local-test.js",
+    "play": "serverless invoke --function rateHandler",
+    "deploy:func": "serverless deploy function --function rateHandler",
     "deploy": "serverless deploy"
+  },
+  "dependencies": {
+    "node-fetch": "^1.6.3"
+  },
+  "devDependencies": {
+    "dotenv": "16.0.1"
   }
 }
