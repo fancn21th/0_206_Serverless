@@ -1,5 +1,6 @@
-require("dotenv").config();
-console.log(process.env); // remove this after you've confirmed it working
+// uncomment below to run locally
+// require("dotenv").config();
+// console.log(process.env); // remove this after you've confirmed it working
 
 const fetch = require("node-fetch");
 
