@@ -8,8 +8,8 @@
   "scripts": {
     "dev": "node local-test.js",
     "play": "serverless invoke --function botHandler",
-    "deploy:func": "serverless deploy function --function botHandler",
-    "deploy": "serverless deploy"
+    "deploy:func": "serverless deploy function --function botHandler --verbose",
+    "deploy": "serverless deploy --verbose"
   },
   "dependencies": {
     "node-fetch": "^1.6.3"

@@ -1,4 +1,4 @@
-// uncomment below to run locally
+// uncomment below to run locally in old fashion way
 // require("dotenv").config();
 // console.log(process.env); // remove this after you've confirmed it working
 
