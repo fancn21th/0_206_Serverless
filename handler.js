@@ -6,9 +6,16 @@ const fetch = require("node-fetch");
 
 module.exports.run = async (event, context) => {
   const body = {
-    msgtype: "text",
-    text: {
-      content: process.env.BOT_MSG,
+    msgtype: "news",
+    news: {
+      articles: [
+        {
+          title: process.env.BOT_TITLE,
+          description: process.env.BOT_DESC,
+          url: process.env.BOT_ARTICLE_URL,
+          picurl: process.env.BOT_PIC_URL,
+        },
+      ],
     },
   };
 
